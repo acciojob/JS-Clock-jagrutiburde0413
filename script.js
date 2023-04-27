@@ -12,7 +12,7 @@ function setClock() {
   const hoursDegrees = ((hours / 12) * 360) + 90; // Convert to degrees
 
   // Calculate the position of the minute hand
-  const minutes = now.getMinutes()%12;
+  const minutes = now.getMinutes();
   const minutesDegrees = ((minutes /60) * 360) + 90;
 	
 
