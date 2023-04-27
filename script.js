@@ -8,9 +8,9 @@ function setClock() {
   const now = new Date();
 
   // Calculate the position of the hour hand
-   const hours = now.getHours();
-  const hoursDegrees = ((hours / 12) * 360) + ((minutes / 60) * 30) + 90;
- 
+  const hours = now.getHours() % 12; // Convert to 12-hour format
+  const hoursDegrees = ((hours / 12) * 360) + 90; // Convert to degrees
+
   // Calculate the position of the minute hand
   const minutes = now.getMinutes();
   const minutesDegrees = ((minutes /60) * 360) + 90;
