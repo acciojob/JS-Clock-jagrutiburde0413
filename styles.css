@@ -1,1 +1,8 @@
 /* Your CSS Code here. */
+const now = new Date();
+const seconds = now.getSeconds();
+const mins = now.getMinutes();
+const hour = now.getHours();
+const hourDegrees = (30*hour + mins/2)%360;
+const minsDegrees = 6*mins;
+const secondsDegrees = 6*seconds;
